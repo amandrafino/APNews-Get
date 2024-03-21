@@ -1,5 +1,6 @@
+# Import Libraries
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import openai
 import requests
 import json
@@ -7,6 +8,7 @@ import time
 import logging
 from datetime import datetime
 import streamlit as st
+
 
 # Fetch the OpenAI API key from environment variables
 api_key = os.getenv('OPENAI_API_KEY')
@@ -18,6 +20,7 @@ news_api_key = os.getenv("NEWS_API_KEY")
 
 client = openai.OpenAI()
 model = "gpt-3.5-turbo=16k"
+
 
 # Tap into NewsAPI
 def get_news(topic):
@@ -70,7 +73,7 @@ def get_news(topic):
 
 
 def main():
-   news = get_news("bitcoin") 
+   news = get_news("Israel") 
    print(news[0])
 
 if __name__ == "__main__":
