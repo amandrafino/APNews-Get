@@ -71,7 +71,7 @@ def get_news(topic):
 
 def main():
    news = get_news("bitcoin") 
-   print(news[0])
+   print(news[2])
 
 if __name__ == "__main__":
     main()
