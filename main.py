@@ -10,9 +10,11 @@ import streamlit as st
 
 # Fetch the OpenAI API key from environment variables
 api_key = os.getenv('OPENAI_API_KEY')
+#api_key="osenviron.get("NEWS_API_KEY")
 
 # Fetch New_API_Key
 news_api_key = os.getenv("NEWS_API_KEY")
+#news_api_key=osenviron.get("NEWS_API_KEY")
 
 client = openai.OpenAI()
 model = "gpt-3.5-turbo=16k"
